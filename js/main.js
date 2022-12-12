@@ -154,16 +154,16 @@
 
 // default example
 simplyCountdown('.simply-countdown-one', {
-  year: 2022,
-  month: 2,
-  day: 27,
+  year: 2023,
+  month: 4,
+  day: 1,
 });
 
 //jQuery example
 $('#simply-countdown-losange').simplyCountdown({
-  year: 2022,
-  month: 2,
-  day: 27,
+  year: 2023,
+  month: 4,
+  day: 1,
   enableUtc: false,
 });
 
