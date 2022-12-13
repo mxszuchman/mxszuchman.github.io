@@ -182,7 +182,7 @@ $('#rsvp-form').on('submit', function (e) {
   $('.wedding-loader').fadeIn('slow');
   var body = $(this).serialize();
   $.post(
-    'https://script.google.com/macros/s/AKfycbwwqUjQAjl4JbeQ4SrpbRc_zOwEcVRShNP5UscMQwuTWVvlGCqzwKKsFXYhnSabwIL7Pg/exec',
+    'https://script.google.com/macros/s/AKfycbzc1G_9YRR_RTjydqPEVLU6q2cvTzkJFDJPYpvE8nyKUjnuG7dDTCjt0Yeq_N0hDBAwFA/exec',
     body
   )
     .done(function (data) {
