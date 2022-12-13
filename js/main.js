@@ -180,10 +180,9 @@ function alert_markup(alert_type, msg) {
 $('#rsvp-form').on('submit', function (e) {
   e.preventDefault();
   $('.wedding-loader').fadeIn('slow');
-  var body = $(this).serialize();
+  var data = $(this).serialize();
   $.post(
-    'https://script.google.com/macros/s/AKfycbwXOfK_cvdM6KxxLTD4u8pXIy19DdvkuXOqSnK4etPhXvCVzfaXiSGsMsIH4Z8WBHsuWQ/exec',
-    body
+    'https://script.google.com/macros/s/AKfycbx8AwzswJgbWiR8-0aor3yMROj5NgB5r5I6fI-utcjP8l7pKYSbJOejbRgQGCq3CiLCOw/exec',  data
   )
     .done(function (data) {
       $('#alert-wrapper').html('');
