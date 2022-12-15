@@ -182,8 +182,6 @@ $('#rsvp-form').on('submit', function (e) {
   e.preventDefault();
   $('.wedding-loader').fadeIn('slow');
   var data = $(this).serialize();
-  console.log("Data log:");
-  console.log(data);
   $.post(
     'https://script.google.com/macros/s/AKfycbylBnOQyCF51Xu9cuOV5gAM6WoyV_SteCNGl0d6kRujP_Q0-wO4dum5NLjEVs2aCSuSXg/exec',  data
   )
