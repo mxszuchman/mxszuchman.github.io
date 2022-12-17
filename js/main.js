@@ -183,7 +183,7 @@ $('#rsvp-form').on('submit', function (e) {
   $('.wedding-loader').fadeIn('slow');
   var data = $(this).serialize();
   $.post(
-    'https://script.google.com/macros/s/AKfycbxW5doJoko-_jXLdyV-Z1cjZmlgSYj1T9EmX6rbxOXsfxRetP0kxMMp6z2vkYYt3DT9/exec',  data
+    'https://script.google.com/macros/s/AKfycby97LRVfUE-7rQIjjKPHXp_ho1l0Z0rLUbDiFfBwNYXQ9Y898qahKZOLQfoCvMKYOUu/exec',  data
   )
     .done(function (data) {
       $('#alert-wrapper').html('');
