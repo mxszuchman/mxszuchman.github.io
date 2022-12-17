@@ -166,37 +166,3 @@ $('#simply-countdown-losange').simplyCountdown({
   day: 1,
   enableUtc: false,
 });
-
-/********************** RSVP **********************/
-
-function alert_markup(alert_type, msg) {
-  return (
-    '<div class="alert alert-' +
-    alert_type +
-    '" role="alert">' +
-    msg +
-    '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>'
-  );
-}
-$('#rsvp-form').on('submit', function (e) {
-  e.preventDefault();
-  $('.wedding-loader').fadeIn('slow');
-  var data = $(this).serialize();
-  $.post(
-    'https://script.google.com/macros/s/AKfycby97LRVfUE-7rQIjjKPHXp_ho1l0Z0rLUbDiFfBwNYXQ9Y898qahKZOLQfoCvMKYOUu/exec',  data
-  )
-    .done(function (data) {
-      $('#alert-wrapper').html('');
-      $('.wedding-loader').fadeOut('slow');
-      $('#rsvp-modal').modal('show');
-      $('#rsvp-form').trigger('reset');
-    })
-    .fail(function (data) {
-      $('#alert-wrapper').html(
-        alert_markup(
-          'danger',
-          '<strong>Lo sentimos!</strong> Hubo un problema con el servidor. '
-        )
-      );
-    });
-});
