@@ -539,6 +539,11 @@
                     Confirmar
                   </button>
                 </div>
+
+                <div class="thankyou_message" style="display:none;">
+                  <h2><em>Gracias</em> Estamos felices que puedas celebrar con nosotros 🎉.</h2>
+                </div>
+
               </form>
               <div class="row">
                 <div class="col-md-12" id="alert-wrapper"></div>
@@ -547,30 +552,7 @@
           </div>
         </div>
 
-        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span>&times;</span>
-                </button>
-                <div class="section-padding">
-                  <h3>Gracias!</h3>
-                  <p>Estamos felices que puedas celebrar con nosotros 🎉.</p>
-                </div>
-              </div>
-            </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
-      </div>
+        
 
       <div id="wedding-gallery" class="wedding-section-gray">
         <div class="container">
@@ -587,6 +569,8 @@
           </div>
         </div>
       </div>
+
+      
 
       <div id="wedding-map-spotify">
         <div class="container">
@@ -667,5 +651,7 @@
     <script src="js/simplyCountdown.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
+     <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
   </body>
 </html>
