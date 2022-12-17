@@ -1860,4 +1860,8 @@ form label {
   background-color: #8b806f;
 }
 
+.honeypot-field {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

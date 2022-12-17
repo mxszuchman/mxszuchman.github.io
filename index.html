@@ -448,23 +448,24 @@
       </div>
 
       <div
-        id="rsvp"
-        class="wedding-bg"
-        style="background-image: url(images/img_bg_4.jpg)"
-      >
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center wedding-heading">
-              <h2>Confirmar Asistencia</h2>
-              <p>
-                Por favor, completar un formulario por persona. Te esperamos!
-              </p>
-            </div>
+      id="rsvp"
+      class="wedding-bg"
+      style="background-image: url(images/img_bg_4.jpg)"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row" id="contenedor">
+          <div class="col-md-8 col-md-offset-2 text-center wedding-heading">
+            <h2>Confirmar Asistencia</h2>
+            <p>
+              Por favor, completar un formulario por persona. Te esperamos!
+            </p>
           </div>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <form class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbxW5doJoko-_jXLdyV-Z1cjZmlgSYj1T9EmX6rbxOXsfxRetP0kxMMp6z2vkYYt3DT9/exec">
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <form id="rsvp-form" class="gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbz-bhJNV5tOkY7mRdV6zinLSJPmBFDhYBTduRnxtpQVhEz09vj1fQeomZcyeu57_yb_/exec" method="POST">
+              <div class="form-groupo" id="form-groupo">
                 <div class="col-md-4 col-sm-4">
                   <div class="form-group">
                     <label for="name" class="sr-only">Nombre</label>
@@ -514,7 +515,7 @@
                       <option value="Celiaco">Celiaco</option>
                       <option value="Vegetariano">Vegetariano</option>
                       <option value="Vegano">Vegano</option>
-                      <option value="Vegano">Kosher</option>
+                      <option value="Kosher">Kosher</option>
                     </select>
                   </div>
                 </div>
@@ -539,20 +540,23 @@
                     Confirmar
                   </button>
                 </div>
-
-                <div class="thankyou_message" style="display:none;">
-                  <h2><em>Gracias</em> Estamos felices que puedas celebrar con nosotros 🎉.</h2>
-                </div>
-
-              </form>
-              <div class="row">
-                <div class="col-md-12" id="alert-wrapper"></div>
               </div>
+
+              <div class="col-md-8 col-md-offset-2 text-center wedding-heading thankyou_message" style="display:none;">
+                <h2>¡Gracias!</h2>
+                <p>
+                  Estamos felices que puedas celebrar con nosotros 🎉
+                </p>
+              </div>
+
+            </form>
+            <div class="row">
+              <div class="col-md-12" id="alert-wrapper"></div>
             </div>
           </div>
         </div>
-
-        
+      </div>
+    </div>
 
       <div id="wedding-gallery" class="wedding-section-gray">
         <div class="container">
@@ -569,8 +573,6 @@
           </div>
         </div>
       </div>
-
-      
 
       <div id="wedding-map-spotify">
         <div class="container">
@@ -651,7 +653,7 @@
     <script src="js/simplyCountdown.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
-     <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
   </body>
 </html>
