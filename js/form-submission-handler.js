@@ -56,7 +56,7 @@
       return false;
     }
 
-    disableAllButtons(form);
+    //disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
@@ -99,6 +99,16 @@
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
+  }
+
+  document.getElementById("btnAddParticipant").addEventListener("click", addParticipant);
+
+  function addParticipant() {
+    $('.wedding-loader').fadeIn('slow');
+    document.getElementById("form-groupo").style.display = "none";
+    document.getElementById("contenedor").style.display = "block";
+    document.getElementById("form-groupo").style.display = "block";
+    $('.wedding-loader').fadeOut('slow');
   }
   
 })();
