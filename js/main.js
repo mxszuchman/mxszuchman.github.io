@@ -138,7 +138,25 @@
   var parallax = function () {
     $(window).stellar();
   };
+/*
+  var selectElement = document.getElementById("carDdl");
 
+  selectElement.addEventListener('change', (event) => {
+    var result = event.target.value;
+    
+    if (result === "Si") {
+      document.getElementById("needCombi").style.display = "none";
+      document.getElementById("availableSeats").style.display = "block";
+
+    }
+
+    if (result === "No") {
+      document.getElementById("availableSeats").style.display = "none";
+      document.getElementById("needCombi").style.display = "block";
+    }
+  
+  });
+*/
   $(function () {
     //mobileMenuOutsideClick();
     parallax();
