@@ -94,6 +94,10 @@ figure {
   z-index: 100;
 }
 
+.padington-container {
+  padding-top: 80px;
+}
+
 .wedding-nav {
   position: absolute;
   top: 0;
