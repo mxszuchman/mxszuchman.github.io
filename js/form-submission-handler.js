@@ -109,8 +109,7 @@
     document.getElementById("contenedor").style.display = "block";
     document.getElementById("form-groupo").style.display = "block";
     document.getElementById("thankyou_message").style.display = "none";
-    document.getElementById("needCombi").style.display = "none";
-    document.getElementById("availableSeats").style.display = "none";
+    
     $('.wedding-loader').fadeOut('slow');
   }
   
