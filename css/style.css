@@ -328,7 +328,7 @@ figure {
 @media screen and (max-width: 768px) {
   .wedding-cover {
     height: 600px;
-    background-position: -310px 0px;
+    background-position: -310px 0px !important;
   }
 }
 .wedding-cover .display-t,
