@@ -1930,10 +1930,9 @@ pre code {
 }
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  max-width: 1200px; /* Tamaño máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
 }
 .container:before, .container:after {
   content: " ";
