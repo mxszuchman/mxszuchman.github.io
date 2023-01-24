@@ -170,6 +170,12 @@
   });
 })();
 
+document.querySelector('.btn-direction').addEventListener('click', function(){
+  document.querySelector('#wedding-map-fest').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+});  
+
 // default example
 simplyCountdown('.simply-countdown-one', {
   year: 2023,
